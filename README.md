@@ -6,7 +6,9 @@ To find the PEAS description for the given AI problem and develop an AI agent.
 
 ## THEORY
 A vacuum-cleaner world with just two locations.
+
 <br/>Each location can be clean or dirty.
+
 <br/>The agent can move left or right and can clean the square that it occupies.
 
 ## PEAS DESCRIPTION
@@ -18,23 +20,23 @@ A vacuum-cleaner world with just two locations.
 
 ## DESIGN STEPS
 ### STEP 1:
-Identifying the input:
-
+The inputs are location of the agent and the status of the location.
 ### STEP 2:
-Identifying the output:
-
-### STEP 3:
-Developing the PEAS description:
+The output of the system is Right Left and Suck.
+### STEP 3: 
+Agent Type:Vaccum Cleaner
+<br/>Performance Measure: Cleanliness , Number of Movements
+<br/>Environment: Rooms
+<br/>Actuators: Wheels and Suction tool
+<br/>Sensor: Location Sensor and Cleanliness sensor
 ### STEP 4:
-Implementing the AI agent
-
+The agent should detect the location and suck if the location it is dirty,else it should move to the next location.
 ### STEP 5:
-Measure the performance parameters
+The performance is measured with the number of movements and the cleaning action of the agent.
 
 ## PROGRAM
-```python
+```python3
 import random
-
 class Thing:
     """
         This represents any physical object that can appear in an Environment.
@@ -271,7 +273,8 @@ if __name__ == "__main__":
 
 ## OUTPUT
 
-![image](https://user-images.githubusercontent.com/70213227/162233773-36b98fe6-87dd-41bb-ae88-cdd77868511e.png)
+![image](https://user-images.githubusercontent.com/70213227/162235957-6ade1d49-c6b7-4fcb-baa6-1318b9493dfc.png)
+
 
 ## RESULT
 
